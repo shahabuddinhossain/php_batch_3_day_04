@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-1{width: 8.33%; float: left}
+.col-2{width: 16.66%; float: left}
+.col-3{width: 25%; float: left}
+.col-4{width: 33.33%; float: left}
+.col-5{width: 41.66%; float: left}
+.col-6{width: 50%; float: left}
+.col-7{width: 58.33%; float: left}
+.col-8{width: 66.66%; float: left}
+.col-9{width: 75%; float: left}
+.col-10{width: 83.33%; float: left}
+.col-11{width: 91.66%; float: left}
+.col-12{width: 100%; float: left}
+
+.col-m1{width: 8.33%; float: left}
+.col-m2{width: 16.66%; float: left}
+.col-m3{width: 25%; float: left}
+.col-m4{width: 33.33%; float: left}
+.col-m5{width: 41.66%; float: left}
+.col-m6{width: 50%; float: left}
+.col-m7{width: 58.33%; float: left}
+.col-m8{width: 66.66%; float: left}
+.col-m9{width: 75%; float: left}
+.col-m10{width: 83.33%; float: left}
+.col-m11{width: 91.66%; float: left}
+.col-m12{width: 100%; float: left}
+
+[class*="col-"]{
+    float: left;
+    border: 1px solid gray;
+}
+
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.h-200{height: 200px;}
+.h-50{height:  50px;}
+.h-600{height: 600px;}
+.h-250{height: 250px;}
+.h-40{height:  40px;}
+
+h1, p{
+    text-align: center;
+    line-height: 250%;
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    .test{
+        background-color: green;
+    }
+
+}
+
+@media screen and (max-width: 720px) and (min-width: 480px) {
+    .test2{
+        background-color: lightgray;
+    }
+}
+
+@media screen and (max-width: 520px ) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
